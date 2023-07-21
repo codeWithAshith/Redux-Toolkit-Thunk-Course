@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InputComponent from "./Input.component";
 import ListComponent from "./List.component";
+import { getAllTodos } from "../store/features/todoSlice";
+import { useDispatch } from "react-redux";
 
 const TodoComponent = () => {
+  const dispatch = useDispatch();
   const [item, setItem] = useState({
     id: 0,
     item: "",
     isCompleted: false,
   });
+
+  useEffect(() => {
+    dispatch(getAllTodos());
+  }, []);
 
   return (
     <div className="flex flex-col h-screen w-screen items-center my-10">

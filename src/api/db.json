@@ -1,36 +1,30 @@
 {
   "users": [
-    { "id": 1, "name": "Ashith" },
-    { "id": 2, "name": "Arjun" }
+    {
+      "id": 1,
+      "name": "Ashith"
+    },
+    {
+      "id": 2,
+      "name": "Arjun"
+    }
   ],
   "todos": [
     {
       "id": 1,
-      "todo": "Task 1",
+      "item": "Task 100",
       "isCompleted": false,
       "userId": 1
     },
     {
       "id": 2,
-      "todo": "Task 2",
+      "item": "Task 2",
       "isCompleted": false,
       "userId": 1
     },
     {
       "id": 3,
-      "todo": "Task 3",
-      "isCompleted": false,
-      "userId": 1
-    },
-    {
-      "id": 4,
-      "todo": "Task 4",
-      "isCompleted": false,
-      "userId": 1
-    },
-    {
-      "id": 5,
-      "todo": "Task 5 ",
+      "item": "Task 3",
       "isCompleted": false,
       "userId": 1
     }

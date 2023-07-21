@@ -19,6 +19,11 @@ import App from "./App";
 // 3. Create slice with initialState and return reducer
 // 4. Import the reducer in store and add it to the reducer.
 
+// Redux Thunk: Allows you to write asynchronous logic in your Redux actions.
+// Axios : A simple promise based HTTP client for the browser and node.js
+
+// npm install redux-thunk axios
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

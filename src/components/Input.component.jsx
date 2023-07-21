@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addTodo, editTodo } from "../store/features/todoSlice";
+import { addTodo, updateTodo } from "../store/features/todoSlice";
 
 const InputComponent = ({ item, setItem }) => {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const InputComponent = ({ item, setItem }) => {
               })
             );
           } else {
-            dispatch(editTodo(item));
+            dispatch(updateTodo(item));
           }
           setItem({
             id: 0,
