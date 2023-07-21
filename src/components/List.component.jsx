@@ -4,7 +4,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { useSelector } from "react-redux";
 
 const ListComponent = () => {
-  const todos = useSelector((state) => state.todoReducer.todos);
+  const todos = useSelector((reducer) => reducer.todoReducer.todos);
 
   console.log(todos);
 
